@@ -1,9 +1,11 @@
+/* RESETEO UNIVERSAL */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* HEADER */
 .navbar{
     background-color: #254F81;
     display: flex;
@@ -13,8 +15,46 @@
     left: 0;
     width: 100%;
     min-height: 80px;
+    font-weight: bold;
 }
 
+.navbar a{
+    font-weight: bold;
+}
+
+/* NAV HOVER */
+.navbar a:hover{
+    color: gray;
+}
+
+/* MAIN */
+main{
+    background-image: url(../multimedia/backgroundimage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.principal-home h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.principal-home p{
+    font-size: 18px;
+}
+
+.principal-home h2{
+    background-color: #0077B6;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #254F81;
+}
+/* MEDIAQUERIES */
 @media only screen and (min-width: 768px){
     .collapse{
         display: flex;
