@@ -42,6 +42,8 @@ main{
     font-family: "Roboto Mono", monospace;
 }
 
+
+/* HOME */
 .principal-home h1{
     font-size: 35px;
     font-family: "Rubik", sans-serif;
@@ -120,6 +122,42 @@ main{
 .galeria-home .item8{
     background-image: url(/multimedia/imagen8.jpg);
     
+}
+
+/* SERVICIOS */
+main h1{
+    font-size: 35px;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+}
+
+main h2{
+    font-size: 20px;
+}
+
+.card-servicios{
+    background-color: #0077B6;
+}
+
+.card-servicios-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.card-img-servicios{
+    background-position: center;
+    background-size: cover;
+}
+
+.card-servicios-descripcion{
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+}
+
+.btn-servicios{
+    background-color: #0077B6;
+    font-weight: bold;
 }
 
 /* FOOTER */
