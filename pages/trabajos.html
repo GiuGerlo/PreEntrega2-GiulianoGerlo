@@ -19,7 +19,7 @@
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar navbar-expand-md p-2">
-                        <a class="navbar-brand" href="#">WJR Design</a>
+                        <a class="navbar-brand" href="#" id="title-header">WJR Design</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -53,6 +53,35 @@
             p-3">
                 <h1>Trabajos</h1>
                 <h2>Carrusel Diseño grafico</h2>
+                <!-- Carousel -->
+<div id="demo" class="carousel slide bg-dark carrusel-trabajos" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../multimedia/auto1-foto1.jpg" alt="" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="../multimedia/auto1-foto2.jpg" alt="" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="../multimedia/auto1-foto3.jpg" alt="" class="d-block w-100">
+        </div>
+    </div> 
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
                 <h2>Carrusel Servicios web</h2>
                 <h2>Carrusel Rotulación</h2>
                 <h2>Carrusel Diseño locales</h2>
@@ -65,17 +94,18 @@
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="d-flex justify-content-center p-2">
-                    <div class="logo-footer col-6">
-                        <img src="../multimedia/LOGO-WJR-DESIGN.svg" alt="Logo WJR Design" height="40px" width="40px"
-                        >
-                        <div class="redes justify-content-center col-6">
-                            <a href="https://www.instagram.com/walraccone" target="_blank">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </div>
+                <div class="col d-flex align-items-center p-2">
+                    <div class="logo-footer me-auto">
+                        <a href="#">
+                            <img src="../multimedia/LOGO-WJR-DESIGN.svg" alt="Logo WJR Design" height="40px" width="40px">
+                        </a>
                     </div>
-                    <p class="col-6 text-center align-self-center">Copyright ©2024 All rights reserved</p>
+                    <p class="text-center align-self-center m-0">Copyright ©2024 All rights reserved</p>
+                    <div class="redes ms-auto">
+                        <a href="https://www.instagram.com/walraccone" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
