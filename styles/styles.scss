@@ -6,8 +6,8 @@
 }
 
 /* FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-/* Roboto Mono - Anta - Roboto Condensed - Playfair Display - Rubik */
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* Roboto Mono - Anta - Poppins - Rubik */
 
 /*VARIABLES*/
 
@@ -18,13 +18,14 @@
     $color4: #90E0EF;
     $color5: #CAF0F8;
     $color6: #748386;
+    $color7: #495057;
 
     /*FUENTES*/
     $font1: "Anta", sans-serif;
     ; // HEADER Y FOOTER
     $font2: "Rubik", sans-serif; // TITLES
     $font3: "Roboto Mono", monospace; // SUBTITLES
-    $font4: "Playfair Display", serif; // PARRAFOS
+    $font4: "Poppins", sans-serif; // PARRAFOS
 
     /*TAMAÑOS DE FUENTES*/
     /*H1*/
@@ -86,6 +87,8 @@ main{
         p{
             font-size: $fsizep;
             font-family: $font4;
+            color: $color7;
+            font-weight: 300;
         }
 
         h2{
@@ -161,16 +164,29 @@ main{
 
 /* SOBRE MI */
 
-// .principal-sobre-mi{
-//     h1{
-//         font-size: 35px;
-//     }
+.parrafo-sobremi-izq{
+    text-align: center;
+    padding: 8px;
+}
 
-//     h2{
-//         font-family: "Rubik", sans-serif;
-//         font-weight: bold;
-//     }
-// }
+.parrafo-sobremi-der{
+    text-align: center;
+    padding: 8px;
+}
+
+.contenedor-img-sobremi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.img-sobremi{
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    border: 5px $color2 outset;
+}
 
 /*TRABAJOS*/
 
@@ -416,6 +432,18 @@ footer{
         grid-row: 4/5;
         background-position: top;
     }
+
+    /*SOBRE MI*/
+
+    /* SOBRE MI */
+
+.parrafo-sobremi-izq{
+    text-align: justify;
+}
+
+.parrafo-sobremi-der{
+    text-align: justify;
+}
 
     /*TRABAJOS*/
 
