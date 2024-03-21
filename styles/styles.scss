@@ -33,7 +33,7 @@
     $fsizeh1-md: 70px;
     /*H2*/
     $fsizeh2: 25px;
-    $fsizeh2-md: 30px;
+    $fsizeh2-md: 35px;
     /*P*/
     $fsizep: 18px;
     $fsizep-md: 22px;
@@ -94,9 +94,9 @@ main{
         h2{
             font-family: $font3;
             font-size: $fsizeh2;
+            font-weight: bold;
         }
 }
-
 
 /* HOME */
 .principal-home{
@@ -107,59 +107,37 @@ main{
     }
 }
 
-/* GALERIA-HOME */
-.galeria-home{
+/*GALERIA HOME*/
+$numero-items: 8;
+
+.galeria-home {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 180px);
+    grid-template-rows: repeat(#{$numero-items}, 180px); 
     background-color: $color5;
     padding: 15px;
     grid-gap: 15px;
 
-        .item{
+    @for $i from 1 through $numero-items {
+        .item#{$i} {
             border: 3px solid $color1;
             background-size: cover;
             background-position: center;
             filter: grayscale(1);
-        }
 
-            .item:hover{
+            &:hover {
                 transform: scale(1.08);
                 transition: 2s;
                 filter: grayscale(0);
             }
+        }
+    }
+}
 
-                .item1{
-                    background-image: url(../multimedia/img-home1.jpg);   
-                }
-
-                .item2{
-                    background-image: url(../multimedia/img-home2.jpg);
-                }
-
-                .item3{
-                    background-image: url(../multimedia/img-home3.jpg);
-                }
-
-                .item4{
-                    background-image: url(../multimedia/img-home4.jpg)
-                }
-
-                .item5{
-                    background-image: url(../multimedia/img-home5.jpg);
-                }
-
-                .item6{
-                    background-image: url(../multimedia/img-home6.jpg);
-                }
-                
-                .item7{
-                    background-image: url(../multimedia/img-home7.jpg);
-                }
-                
-                .item8{
-                    background-image: url(../multimedia/img-home8.jpg);    
-                }
+@for $i from 1 through $numero-items {
+    .galeria-home .item#{$i} {
+        background-image: url(../multimedia/img-home#{$i}.jpg);
+    }
 }
 
 /* SOBRE MI */
@@ -191,6 +169,17 @@ main{
 /*TRABAJOS*/
 
 .carrusel-trabajos{
+
+    .subtitulo-carrusel{
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-image: linear-gradient(to right bottom, #254f81, #24568b, #215e95, #1c659f, #156da9, #1075b1, #087eb9, #0086c1, #0092c8, #009dce, #00a9d4, #00b4d8);
+        border-radius: 20px;
+    }
+}
+
+.carrusel-trabajos{
     height: auto;
     width: auto;
 }
@@ -205,10 +194,9 @@ main{
 
 /* SERVICIOS */
 
-
 /*CARD*/
 .card-servicios{
-    background-color: $color2;
+    background-image: linear-gradient(to bottom, #254f81, #24568b, #215e95, #1c659f, #156da9, #1075b1, #087eb9, #0086c1, #0092c8, #009dce, #00a9d4, #00b4d8);
 
     .card-servicios-titulo{
         font-size: $fsizecard;
@@ -321,19 +309,7 @@ footer{
 
     /* SOBRE MI */
 
-    .principal-sobre-mi h1{
-        font-size: 50px;
-    }
-
     /*TRABAJOS*/
-
-    // .carrusel-trabajos{
-    //     height: ;
-    // }
-
-    // .carrusel-item{
-        
-    // }
 
     .carrusel-img{
         height: 300px;
@@ -435,8 +411,6 @@ footer{
         background-position: top;
     }
 
-    /*SOBRE MI*/
-
     /* SOBRE MI */
 
 .parrafo-sobremi-izq{
@@ -456,9 +430,9 @@ footer{
     .carrusel-img-merchandasing{
         width: 70%;
         height: 400px;
-        max-width: none; /* Anula la restricción de ancho máximo */
-        display: block; /* Hace que la imagen sea un bloque para poder centrarla */
-        margin: 0 auto; /* Centra la imagen horizontalmente */
+        max-width: none;
+        display: block; 
+        margin: 0 auto; 
     }
 
 }
