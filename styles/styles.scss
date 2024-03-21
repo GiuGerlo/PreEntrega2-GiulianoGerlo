@@ -204,17 +204,7 @@ main{
 }
 
 /* SERVICIOS */
-// main{
-//     h1{
-//         font-size: 35px;
-//         font-family: "Rubik", sans-serif;
-//         font-weight: bold;
-//     }
 
-//     h2{
-//         font-size: 25px;
-//     }
-// }
 
 /*CARD*/
 .card-servicios{
@@ -228,6 +218,9 @@ main{
     .card-img-servicios{
         background-position: center;
         background-size: cover;
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
     }
 
     .card-servicios-descripcion p{
@@ -250,9 +243,18 @@ main{
 
 /* CONTACTO */
 
+.btn-form{
+    background-color: $color2;
+}
+    .btn-form:hover{
+        background-color: $color3;
+    }
+
+
 /* FOOTER */
 footer{
     background-color: $color1;
+    height: 100%;
 
         .redes a{
             color: black;

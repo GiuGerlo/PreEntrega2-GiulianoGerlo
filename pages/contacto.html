@@ -48,35 +48,73 @@
     </header>
     <!-- MAIN -->
     <main>
-        <div class="container-fluid">
-            <div class="principal-contacto text-center row p-3">
-                <h1>Contacto</h1>
-                <h2>FORMULARIO DE CONTACTO</h2>
-        <form action="" method="post" enctype="text/plain">
-            <label for="servicio">Seleccionar servicio:</label>
-                <select name="servicio" id="servicio" required>
-                    <option value="diseño grafico">Diseño gráfico</option>
-                    <option value="servicio web">Servicio web</option>
-                    <option value="rotulacion">Rotulación</option>
-                    <option value="diseño locales">Diseño de locales</option>
-                    <option value="merchandasing">Merchandasing</option>
-                    <option value="otro">Otro</option>
-                </select><br>
-            <label for="nombre y apellido">Nombre y Apellido:</label>
-                <input type="text" placeholder="Tu nombre y apellido" name="nombre y apellido" required><br>
-            <label for="telefono">Teléfono:</label>
-                <input type="tel" placeholder="3468 912912" name="telefono" required><br>
-            <label for="correo">Correo electrónico:</label>
-                <input type="email" placeholder="aaa@gmaill.com" name="correo" required><br>
-            <label for="localidad">Localidad:</label>
-                <input type="text" placeholder="Rosario" name="localidad" required><br>
-            <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Hola..." required></textarea><br>
-                <input type="submit" value="Enviar">
-        </form>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="principal-contacto text-center p-3">
+                        <h1>Contacto</h1>
+                        <p>¡Hagamos realidad tu visión! Estoy aquí para convertir tus ideas en diseños vibrantes y memorables. ¿Listo para dar vida a tu proyecto? ¡Contáctame hoy mismo y comencemos a crear algo increíble juntos! Tu próximo diseño único está a solo un clic de distancia.</p>
+                        <h2>FORMULARIO DE CONTACTO</h2>
+                        <form action="" method="post" enctype="text/plain">
+                            <div class="mb-3 row align-items-center">
+                                <label for="servicio" class="form-label col-md-4">Seleccionar servicio:</label>
+                                <div class="col-md-8">
+                                    <select class="form-select" name="servicio" id="servicio" required>
+                                        <option value="diseño grafico">Diseño gráfico</option>
+                                        <option value="servicio web">Servicio web</option>
+                                        <option value="rotulacion">Rotulación</option>
+                                        <option value="diseño locales">Diseño de locales</option>
+                                        <option value="merchandising">Merchandising</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3 row align-items-center">
+                                <label for="nombreApellido" class="form-label col-md-4">Nombre y Apellido:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="nombreApellido" placeholder="Tu nombre y apellido" name="nombreApellido" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row align-items-center">
+                                <label for="telefono" class="form-label col-md-4">Teléfono:</label>
+                                <div class="col-md-8">
+                                    <input type="tel" class="form-control" id="telefono" placeholder="3468 912912" name="telefono" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row align-items-center">
+                                <label for="correo" class="form-label col-md-4">Correo electrónico:</label>
+                                <div class="col-md-8">
+                                    <input type="email" class="form-control" id="correo" placeholder="aaa@gmaill.com" name="correo" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row align-items-center">
+                                <label for="localidad" class="form-label col-md-4">Localidad:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="localidad" placeholder="Rosario" name="localidad" required>
+                                </div>
+                            </div>
+                            <div class="mb-3 row align-items-center">
+                                <label for="mensaje" class="form-label col-md-4">Mensaje:</label>
+                                <div class="col-md-8">
+                                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Hola..." required></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-form">Enviar formulario</button>
+                                </div>
+                                <div class="col-6">
+                                    <a href="https://wa.link/jr55xz" target="_blank" class="btn btn-success">Contactame por Whatsapp</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+    
+    
 
     <!-- FOOTER -->
     <footer>

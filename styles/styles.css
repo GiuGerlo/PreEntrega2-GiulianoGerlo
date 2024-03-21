@@ -165,6 +165,9 @@ main h2 {
 .card-servicios .card-img-servicios {
   background-position: center;
   background-size: cover;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 .card-servicios .card-servicios-descripcion p {
   font-size: 18px;
@@ -183,9 +186,18 @@ main h2 {
 }
 
 /* CONTACTO */
+.btn-form {
+  background-color: #0077B6;
+}
+
+.btn-form:hover {
+  background-color: #00B4D8;
+}
+
 /* FOOTER */
 footer {
   background-color: #254F81;
+  height: 100%;
 }
 footer .redes a {
   color: black;
