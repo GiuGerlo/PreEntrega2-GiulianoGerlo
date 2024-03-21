@@ -175,8 +175,16 @@ main{
 /*TRABAJOS*/
 
 .carrusel-trabajos{
-    height: 500px;
+    height: auto;
     width: auto;
+}
+
+.carrusel-img{
+    height: 300px;
+}
+
+.carrusel-img-merchandasing{
+    width: 100%;
 }
 
 /* SERVICIOS */
@@ -299,6 +307,20 @@ footer{
         font-size: 50px;
     }
 
+    /*TRABAJOS*/
+
+    // .carrusel-trabajos{
+    //     height: ;
+    // }
+
+    // .carrusel-item{
+        
+    // }
+
+    .carrusel-img{
+        height: 300px;
+    }
+
     /* SERVICIOS */
 
     .card-servicios{
@@ -393,6 +415,20 @@ footer{
         grid-column: 1/3;
         grid-row: 4/5;
         background-position: top;
+    }
+
+    /*TRABAJOS*/
+
+    .carrusel-img{
+        height: 400px;
+    }
+    
+    .carrusel-img-merchandasing{
+        width: 70%;
+        height: 400px;
+        max-width: none; /* Anula la restricción de ancho máximo */
+        display: block; /* Hace que la imagen sea un bloque para poder centrarla */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
     }
 
 }
